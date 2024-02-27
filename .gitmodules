@@ -1,0 +1,3 @@
+[submodule "cocotbext-fcov"]
+	path = cocotbext-fcov
+	url = https://github.com/furiosa-ai/cocotbext-fcov
