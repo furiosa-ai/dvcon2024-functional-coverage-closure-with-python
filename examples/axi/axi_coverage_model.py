@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 ###############################################################################
 # Copyright (c) 2024 FuriosaAI, Inc
 # All rights reserved.
@@ -259,8 +258,8 @@ class AxiMor(CoverGroup):
     def __init__(self, config):
         CoverGroup.__init__(self)
         self.cp_mor = CoverPoint(
-            BinRange(1, config.outstanding_write_requests + 1) 
-            if isinstance(config.outstanding_write_requests, int) 
+            BinRange(1, config.outstanding_write_requests + 1)
+            if isinstance(config.outstanding_write_requests, int)
             else BinOutOfSpec()
         )
 
