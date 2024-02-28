@@ -17,8 +17,5 @@ $(COVERAGE_MODEL_EXAMPLES):
 clean:
 	$(foreach TEST, $(ALL_EXAMPLES), $(MAKE) -C $(TEST) clean;)
 
-regression:
-	$(foreach TEST, $(TEST_EXAMPLES), $(MAKE) -C $(TEST) regression;)
-
 coverage.sv:
-	$(foreach TEST, $(ALL_EXAMPLES), $(MAKE) -C $(TEST) regression;)
+	$(foreach TEST, $(ALL_EXAMPLES), $(MAKE) -C $(TEST) coverage.sv;)
