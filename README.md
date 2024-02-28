@@ -12,3 +12,19 @@ cd dvcon2024-functional-coverage-closure-with-python
 git submodule update --init --recursive 
 pip install ./cocotbext-fcov
 ```
+
+## Quick Start
+
+To generate SystemVerilog coverage
+
+```
+cd examples
+make coverage.sv
+```
+
+To measure functional coverage
+
+```
+cd examples
+make sim.coverage
+```
